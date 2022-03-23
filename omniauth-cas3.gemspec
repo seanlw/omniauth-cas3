@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["td@matasano.com"]
   gem.summary       = %q{CAS 3.0 Strategy for OmniAuth}
   gem.description   = gem.summary
-  gem.homepage      = "https://github.com/tduehr/omniauth-cas3"
+  gem.homepage      = "https://github.com/seanlw/omniauth-cas3"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Omniauth::Cas3::VERSION
 
-  gem.add_dependency 'omniauth',                '~> 1.2'
+  gem.add_dependency 'omniauth',                '~> 2.0'
   gem.add_dependency 'nokogiri',                '~> 1.7', '>= 1.7.1'
   gem.add_dependency 'addressable',             '~> 2.3'
 
